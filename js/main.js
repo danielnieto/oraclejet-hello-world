@@ -67,5 +67,12 @@ require(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojbutton', '
   function(oj, ko, $) // this callback gets executed when all required modules are loaded
   {
       // add any startup code that you want here
+
+      var viewModel = {
+          message: "Hello Oracle JET"
+      }
+
+      ko.applyBindings(viewModel);
+
   }
 );
